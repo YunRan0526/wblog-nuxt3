@@ -1,0 +1,29 @@
+{
+  "node_modules/nuxt3/dist/app/entry.mjs": {
+    "file": "entry-77ff1458.mjs",
+    "src": "node_modules/nuxt3/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/index.vue"
+    ],
+    "css": [
+      "entry.fd248012.css"
+    ],
+    "assets": [
+      "home_logo.03cc5107.svg",
+      "yln_poster.a6ecb59a.jpg",
+      "line-2.3a0f0657.svg",
+      "line-1.e48d896d.svg",
+      "star.0493e03e.svg",
+      "moon.75e6d4ee.svg"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-8ada5905.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  }
+}
