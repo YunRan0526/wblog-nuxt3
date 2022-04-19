@@ -3,7 +3,9 @@ declare module '@nuxt/schema' {
   interface NuxtConfig {
   }
   interface RuntimeConfig {
-     public: any,
+     public: {
+        NODE_ENV: string,
+    },
 
     app: {
         baseURL: string,

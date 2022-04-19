@@ -3,11 +3,14 @@ declare module 'vue' {
   export interface GlobalComponents {
     'ClickEffects': typeof import("../components/ClickEffects.vue")['default'],
     'MenuBtn': typeof import("../components/MenuBtn.vue")['default'],
-    'MenuPage': typeof import("../components/MenuPage.vue")['default'],
     'MainPageBorder': typeof import("../components/MainPage/Border.vue")['default'],
     'MainPage': typeof import("../components/MainPage/index.vue")['default'],
     'MainPageLogo': typeof import("../components/MainPage/Logo.vue")['default'],
     'MainPageStarAndMoon': typeof import("../components/MainPage/StarAndMoon.vue")['default'],
+    'MenuPageCircleCloseButton': typeof import("../components/MenuPage/CircleCloseButton.vue")['default'],
+    'MenuPage': typeof import("../components/MenuPage/index.vue")['default'],
+    'Menu': typeof import("../components/MenuPage/Menu.vue")['default'],
+    'MenuPageMoveStar': typeof import("../components/MenuPage/MoveStar.vue")['default'],
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'NuxtLayout': typeof import("../node_modules/nuxt3/dist/app/components/layout")['default'],
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default'],
@@ -15,11 +18,14 @@ declare module 'vue' {
     'NuxtLink': typeof import("../node_modules/nuxt3/dist/app/components/nuxt-link")['default']
     'LazyClickEffects': typeof import("../components/ClickEffects.vue")['default'],
     'LazyMenuBtn': typeof import("../components/MenuBtn.vue")['default'],
-    'LazyMenuPage': typeof import("../components/MenuPage.vue")['default'],
     'LazyMainPageBorder': typeof import("../components/MainPage/Border.vue")['default'],
     'LazyMainPage': typeof import("../components/MainPage/index.vue")['default'],
     'LazyMainPageLogo': typeof import("../components/MainPage/Logo.vue")['default'],
     'LazyMainPageStarAndMoon': typeof import("../components/MainPage/StarAndMoon.vue")['default'],
+    'LazyMenuPageCircleCloseButton': typeof import("../components/MenuPage/CircleCloseButton.vue")['default'],
+    'LazyMenuPage': typeof import("../components/MenuPage/index.vue")['default'],
+    'LazyMenu': typeof import("../components/MenuPage/Menu.vue")['default'],
+    'LazyMenuPageMoveStar': typeof import("../components/MenuPage/MoveStar.vue")['default'],
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'LazyNuxtLayout': typeof import("../node_modules/nuxt3/dist/app/components/layout")['default'],
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default'],
@@ -29,11 +35,14 @@ declare module 'vue' {
 }
 export const ClickEffects: typeof import("../components/ClickEffects.vue")['default']
 export const MenuBtn: typeof import("../components/MenuBtn.vue")['default']
-export const MenuPage: typeof import("../components/MenuPage.vue")['default']
 export const MainPageBorder: typeof import("../components/MainPage/Border.vue")['default']
 export const MainPage: typeof import("../components/MainPage/index.vue")['default']
 export const MainPageLogo: typeof import("../components/MainPage/Logo.vue")['default']
 export const MainPageStarAndMoon: typeof import("../components/MainPage/StarAndMoon.vue")['default']
+export const MenuPageCircleCloseButton: typeof import("../components/MenuPage/CircleCloseButton.vue")['default']
+export const MenuPage: typeof import("../components/MenuPage/index.vue")['default']
+export const Menu: typeof import("../components/MenuPage/Menu.vue")['default']
+export const MenuPageMoveStar: typeof import("../components/MenuPage/MoveStar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt3/dist/app/components/layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default']
@@ -41,11 +50,14 @@ export const ClientOnly: typeof import("../node_modules/nuxt3/dist/app/component
 export const NuxtLink: typeof import("../node_modules/nuxt3/dist/app/components/nuxt-link")['default']
 export const LazyClickEffects: typeof import("../components/ClickEffects.vue")['default']
 export const LazyMenuBtn: typeof import("../components/MenuBtn.vue")['default']
-export const LazyMenuPage: typeof import("../components/MenuPage.vue")['default']
 export const LazyMainPageBorder: typeof import("../components/MainPage/Border.vue")['default']
 export const LazyMainPage: typeof import("../components/MainPage/index.vue")['default']
 export const LazyMainPageLogo: typeof import("../components/MainPage/Logo.vue")['default']
 export const LazyMainPageStarAndMoon: typeof import("../components/MainPage/StarAndMoon.vue")['default']
+export const LazyMenuPageCircleCloseButton: typeof import("../components/MenuPage/CircleCloseButton.vue")['default']
+export const LazyMenuPage: typeof import("../components/MenuPage/index.vue")['default']
+export const LazyMenu: typeof import("../components/MenuPage/Menu.vue")['default']
+export const LazyMenuPageMoveStar: typeof import("../components/MenuPage/MoveStar.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt3/dist/app/components/layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default']

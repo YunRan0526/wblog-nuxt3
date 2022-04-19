@@ -8,7 +8,7 @@
     <Border />
     <StarAndMoon />
     <Logo />
-    <MenuBtn class="menu-btn-position-control" />
+    <MenuBtn class="menu-btn-position-control" @click="showMenuPage" />
   </div>
 </template>
 <script setup>
