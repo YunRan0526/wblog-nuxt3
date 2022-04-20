@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt3'
-import { resolve } from 'pathe'
+import { resolve } from 'path'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
     buildDir: 'nuxt-build',
@@ -36,14 +36,33 @@ export default defineNuxtConfig({
     alias: {
         '@assets': resolve(__dirname, './assets')
     },
-    head: {
-        meta: [
-            // <meta name="viewport" content="width=device-width, initial-scale=1">
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-        ]
+    app: {
+        head: {
+            title: "吔包C",
+            meta: [
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                { name: 'description', content: "吔包C,吔包c,吔包网,博客,blog,vue3,nuxt3,a beautiful blog" },
+                { name: "keywords", content: "吔包,吔包C,YBW,yebaoc,yebaoc.com,www.yebaoc.com,yb,ybyb,yb0526,yebao0526" },
+                { property: "og:type", content: "website" },
+                { property: "og:title", content: "吔包C" },
+                { property: "og:site_name", content: "yebaoc.com" },
+                { property: "og:description", content: "吔包C,吔包c,吔包网,博客,blog,vue3,nuxt3,a beautiful blog" },
+                { property: "og:locale", content: "zh_CN" }
+            ]
+        }
     },
     css: [
         '@/config/styles/animation.scss',
         '@/config/styles/main.scss'
-    ]
+    ],
+    vue: {
+        compilerOptions: {
+            directiveTransforms: {
+                lazyBox: () => ({
+                    props: [],
+                    needRuntime: true,
+                })
+            }
+        }
+    }
 })

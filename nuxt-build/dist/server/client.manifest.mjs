@@ -1,71 +1,51 @@
 export default {
-  "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-46940dc9.mjs",
-    "src": "node_modules/nuxt3/dist/app/entry.mjs",
-    "isEntry": true,
-    "dynamicImports": [
-      "pages/AboutMe.vue",
-      "pages/Articles.vue",
-      "pages/Memories.vue",
-      "pages/WorkSpace.vue",
-      "pages/index.vue"
-    ],
-    "css": [
-      "entry.4dfca4b1.css"
-    ],
-    "assets": [
-      "home_logo.03cc5107.svg",
-      "yln_poster.a6ecb59a.jpg",
-      "grey_star.21891557.svg",
-      "grey_moon.65bc9317.svg",
-      "grey_mountain.548ff605.svg",
-      "grey_dog.f0b647fb.svg",
-      "yln_avatar.d4fb860d.png",
-      "line-2.3a0f0657.svg",
-      "line-1.e48d896d.svg",
-      "star.0493e03e.svg",
-      "moon.75e6d4ee.svg",
-      "colorful_point.a5bcf8d6.svg"
-    ]
-  },
-  "pages/AboutMe.vue": {
-    "file": "AboutMe-178f154a.mjs",
-    "src": "pages/AboutMe.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt3/dist/app/entry.mjs"
-    ]
-  },
-  "pages/Articles.vue": {
-    "file": "Articles-0125622f.mjs",
-    "src": "pages/Articles.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt3/dist/app/entry.mjs"
-    ]
-  },
-  "pages/Memories.vue": {
-    "file": "Memories-32daf0ba.mjs",
-    "src": "pages/Memories.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt3/dist/app/entry.mjs"
-    ]
-  },
-  "pages/WorkSpace.vue": {
-    "file": "WorkSpace-b45c1826.mjs",
-    "src": "pages/WorkSpace.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt3/dist/app/entry.mjs"
-    ]
-  },
-  "pages/index.vue": {
-    "file": "index-2e0e4b5f.mjs",
-    "src": "pages/index.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt3/dist/app/entry.mjs"
-    ]
-  }
+  "publicPath": "/_nuxt/",
+  "all": [
+    "@vite/client",
+    "entry.mjs",
+    "config/styles/animation.scss",
+    "config/styles/main.scss",
+    "components/CircleCloseButton.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/PageDecoration.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/YBIMG.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/DecorationBox.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "pages/Articles.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuBtn.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/Border.vue?vue&type=style&index=0&lang.scss",
+    "components/MainPage/StarAndMoon.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/Logo.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuPage/Menu.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuPage/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "pages/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "components/ClickEffects.vue?vue&type=style&index=0&scoped=true&lang.scss"
+  ],
+  "initial": [
+    "@vite/client",
+    "entry.mjs",
+    "config/styles/animation.scss",
+    "config/styles/main.scss",
+    "components/CircleCloseButton.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/PageDecoration.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/YBIMG.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/DecorationBox.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "pages/Articles.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuBtn.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/Border.vue?vue&type=style&index=0&lang.scss",
+    "components/MainPage/StarAndMoon.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/Logo.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MainPage/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuPage/Menu.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "components/MenuPage/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "pages/index.vue?vue&type=style&index=0&scoped=true&lang.scss",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css",
+    "components/ClickEffects.vue?vue&type=style&index=0&scoped=true&lang.scss"
+  ],
+  "async": [],
+  "modules": {}
 }

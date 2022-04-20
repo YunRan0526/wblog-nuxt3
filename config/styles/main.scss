@@ -8,3 +8,100 @@ $theme-red: #c45c66;
   margin: 0;
   padding: 0;
 }
+
+//markdown样式
+.markdown-body {
+  box-sizing: border-box;
+  height: 100vh;
+  text-align: left;
+  .md2vue-wrapper {
+    padding: 0 50px;
+  }
+}
+//markdown样式
+.left_top_flower {
+  &::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: flowerRoatel 4s linear 0s infinite;
+    z-index: 999;
+    background-image: url("/assets/grey/grey_flower.svg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flower_border_bottom {
+    border-bottom: dashed 1px #283c5f;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      animation: flowerRoater 4s linear 0s infinite;
+      background-image: url("/assets/grey/grey_flower.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -10px;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      animation: flowerRoatel 4s linear 0s infinite;
+      background-image: url("/assets/grey/grey_flower.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media screen and (min-width: 761px) {
+  .flower_border_bottom {
+    border-bottom: dashed 1px #283c5f;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -15px;
+      bottom: -15px;
+      width: 30px;
+      height: 30px;
+      animation: flowerRoater 4s linear 0s infinite;
+      background-image: url("/assets/grey/grey_flower.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -15px;
+      bottom: -15px;
+      width: 30px;
+      height: 30px;
+      animation: flowerRoatel 4s linear 0s infinite;
+      background-image: url("/assets/grey/grey_flower.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
