@@ -2343,9 +2343,10 @@ _sfc_main$d.setup = (props, ctx) => {
 const index_vue_vue_type_style_index_0_scoped_true_lang$1 = "";
 const _sfc_main$c = {
   __ssrInlineRender: true,
-  setup(__props) {
+  emits: ["closeMenu"],
+  setup(__props, { emit: emits2 }) {
     useCssVars((_ctx) => ({
-      "75774d08": unref(bgc)
+      "92402e86": unref(bgc)
     }));
     let bgc = ref("#faf7d9");
     const currentSize = ref(window.innerWidth);
@@ -2360,15 +2361,15 @@ const _sfc_main$c = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _cssVars = { style: {
-        "75774d08": unref(bgc)
+        "92402e86": unref(bgc)
       } };
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "menuPage" }, _attrs, _cssVars))} data-v-f6ae041e><div class="plotBackground" data-v-f6ae041e><div class="downItem" data-v-f6ae041e></div><div class="downItem" data-v-f6ae041e></div><div class="downItem" data-v-f6ae041e></div><div class="downItem" data-v-f6ae041e></div>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "menuPage" }, _attrs, _cssVars))} data-v-51f78df8><div class="plotBackground" data-v-51f78df8><div class="downItem" data-v-51f78df8></div><div class="downItem" data-v-51f78df8></div><div class="downItem" data-v-51f78df8></div><div class="downItem" data-v-51f78df8></div>`);
       if (currentSize.value >= 760) {
         _push(ssrRenderComponent(_sfc_main$d, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
-      _push(`</div><div class="menu" data-v-f6ae041e>`);
+      _push(`</div><div class="menu" data-v-51f78df8>`);
       _push(ssrRenderComponent(CircleCloseButton, { class: "btn" }, null, _parent));
       _push(ssrRenderComponent(Menu$2, null, null, _parent));
       _push(`</div></div>`);
@@ -2381,7 +2382,7 @@ _sfc_main$c.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/MenuPage/index.vue");
   return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-f6ae041e"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-51f78df8"]]);
 const index_vue_vue_type_style_index_0_scoped_true_lang = "";
 const meta = void 0;
 const routes = [
@@ -42694,6 +42695,7 @@ const _sfc_main$5 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtPage = resolveComponent("NuxtPage");
       const _component_ClickEffects = __nuxt_component_0;
+      const _component_el_button = resolveComponent("el-button");
       _push(`<!--[-->`);
       _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
       _push(`<!--[-->`);
@@ -42703,7 +42705,20 @@ const _sfc_main$5 = {
           style: { position: "absolute", left: item.left, top: item.top }
         }, null, _parent));
       });
-      _push(`<!--]--><!--]-->`);
+      _push(`<!--]-->`);
+      _push(ssrRenderComponent(_component_el_button, null, {
+        default: withCtx((_2, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`x`);
+          } else {
+            return [
+              createTextVNode("x")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`<!--]-->`);
     };
   }
 };
@@ -42801,14 +42816,14 @@ const _sfc_main = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_MainPage = __nuxt_component_0$1;
       const _component_MenuPage = __nuxt_component_1;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "home" }, _attrs))} data-v-1747ac12>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "home" }, _attrs))} data-v-0e80beae>`);
       _push(ssrRenderComponent(_component_MainPage, null, null, _parent));
       if (unref(menuPage)) {
         _push(ssrRenderComponent(_component_MenuPage, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
-      _push(`<a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=a2cmq.17629970.J_9220772140.114.f0d079feFwsJR2" target="_blank" class="beian" data-v-1747ac12>\u9102ICP\u59072021000948\u53F7</a></div>`);
+      _push(`<a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=a2cmq.17629970.J_9220772140.114.f0d079feFwsJR2" target="_blank" class="beian" data-v-0e80beae>\u9102ICP\u59072021000948\u53F7</a></div>`);
     };
   }
 };
@@ -42818,7 +42833,7 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1747ac12"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0e80beae"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index

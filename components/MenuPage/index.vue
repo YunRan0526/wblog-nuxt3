@@ -21,6 +21,7 @@
 import CircleCloseButton from "./CircleCloseButton.vue";
 import Menu from "./Menu.vue";
 import MoveStar from "./MoveStar.vue";
+const emits = defineEmits(["closeMenu"]);
 const closeMenu = () => {
   emits("closeMenu");
 };

@@ -17,7 +17,6 @@ const closeMenuPage = () => {
   menuPage.value = false;
 };
 const showMenuPage = () => {
-  console.log(111);
   menuPage.value = true;
 };
 </script>
