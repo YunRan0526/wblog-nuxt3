@@ -4,6 +4,7 @@ import { resolve } from 'path'
 export default defineNuxtConfig({
     buildDir: 'nuxt-build',
     runtimeConfig: {
+        NITRO_PORT: 9527,
         public: {
             NODE_ENV: process.env.NODE_ENV,
         }

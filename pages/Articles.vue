@@ -14,7 +14,7 @@
         :description="v.description"
         :date="v.create_time"
         :src="`${v.poster}`"
-        @click="getDeatil(v.id)"
+        @click="getDeatil(v)"
       />
     </div>
   </PageDecoration>
@@ -26,16 +26,23 @@ const articles = ref([]);
 const close = () => {
   router.push({ path: "/" });
 };
-const scroll = () => {
-  console.log(scroll);
+const scroll = () => {};
+const getDeatil = (v) => {
+  const { id, title } = v;
+  router.push({ path: "/ArticleViewer", query: { id, title } });
 };
-const getDeatil = (id) => {
-  console.log(id);
+
+const initList = async () => {
+  const { data, refresh } = await useFetch(
+    "https://www.yebaoc.com/api/article/getAll"
+  );
+  if (data)
+    if (data.value)
+      if (data.value.results) articles.value = data?.value?.results;
 };
-const { data, refresh } = await useFetch(
-  "https://www.yebaoc.com/api/article/getAll"
-);
-articles.value = data?.value?.results.reverse() || [];
+onMounted(() => {
+  initList();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -50,6 +57,7 @@ articles.value = data?.value?.results.reverse() || [];
 .content {
   opacity: 0;
   width: 100%;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   margin-top: 15px;

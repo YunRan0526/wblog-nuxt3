@@ -50,8 +50,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { useRouter } from "vue-router";
 import star from "@assets/grey/grey_star.svg";
 import moon from "/assets/grey/grey_moon.svg";
 import mountain from "/assets/grey/grey_mountain.svg";
@@ -98,7 +96,11 @@ const changeMenuColor = (color) => {
   menuColor.value = color;
 };
 const go = (path) => {
-  router.push({ path });
+  if (path === "/Articles") {
+    router.push({ path });
+    return;
+  }
+  useMessage.error("没有权限");
 };
 const login = () => {
   switch (menuColor.value) {

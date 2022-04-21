@@ -8,7 +8,7 @@
       <div></div>
       <div></div>
     </div>
-    <ElScrollbar class="page_content" @scroll="scroll">
+    <div :class="{ page_content: true, 'beautiful-scroll': true }">
       <div style="width: 100%; display: flex; justify-content: center">
         <div class="page_title" :data-content="props.title1"></div>
       </div>
@@ -24,12 +24,11 @@
       </div>
       <slot></slot>
       <slot name="test" :test="'11'" :test2="'22'"></slot>
-    </ElScrollbar>
+    </div>
     <CircleCloseButton class="btn" @click="close" />
   </div>
 </template>
 <script setup>
-import { ElScrollbar } from "element-plus";
 const props = defineProps({
   title1: {
     type: String,
@@ -44,13 +43,24 @@ const props = defineProps({
     },
   },
 });
-const emit = defineEmits(["close", "scroll"]);
+let timer = null;
+const scrollOP = ref(0);
+const scrollColor = computed(() => {
+  return `rgba(40, 60, 95, ${scrollOP.value})`;
+});
+const emit = defineEmits(["close"]);
 const close = () => {
   emit("close");
 };
-const scroll = () => {
-  emit("scroll");
-};
+onMounted(() => {
+  timer = setInterval(() => {
+    if (scrollOP.value >= 1) {
+      clearInterval(timer);
+      return;
+    }
+    scrollOP.value += 0.025;
+  }, 10);
+});
 </script>
 <style lang="scss" scoped>
 $theme-black: #283c5f;
@@ -58,6 +68,14 @@ $theme-white: #faf7d9;
 $theme-green: #c3ce5f;
 $theme-blue: #4aa9a4;
 $theme-red: #c45c66;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes slide-top {
   from {
     transform: translateY(100%);
@@ -157,6 +175,29 @@ $theme-red: #c45c66;
   to {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+.beautiful-scroll {
+  overflow: scroll !important;
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+  }
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: v-bind(scrollColor);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.3) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 75%,
+      transparent 75%,
+      transparent
+    );
   }
 }
 .page_title {
@@ -328,16 +369,10 @@ $theme-red: #c45c66;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      overflow: scroll;
       z-index: 31;
+      overflow: hidden;
       overflow-x: hidden;
-      &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
-      :deep(.el-scrollbar__wrap) {
-        width: 100% !important;
-      }
+
       .section_title {
         width: 550px;
         padding: 5px 0;

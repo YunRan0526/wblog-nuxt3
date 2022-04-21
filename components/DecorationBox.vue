@@ -51,14 +51,7 @@ $theme-white: #faf7d9;
 $theme-green: #c3ce5f;
 $theme-blue: #4aa9a4;
 $theme-red: #c45c66;
-.el-popper__arrow {
-  display: none !important;
-}
-.el-popover {
-  background: $theme-white !important;
-  border-color: $theme-white !important;
-  font-size: 17px !important;
-}
+
 @media screen and (min-width: 761px) {
   .DecorationBox {
     width: 300px;

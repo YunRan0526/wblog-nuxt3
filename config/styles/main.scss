@@ -8,7 +8,13 @@ $theme-red: #c45c66;
   margin: 0;
   padding: 0;
 }
-
+.el-popper__arrow {
+  display: none !important;
+}
+.el-popover {
+  border-color: $theme-white !important;
+  font-size: 17px !important;
+}
 //markdown样式
 .markdown-body {
   box-sizing: border-box;

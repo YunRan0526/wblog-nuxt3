@@ -14,5 +14,7 @@ declare module '@nuxt/schema' {
 
         cdnURL: string,
     },
+
+    NITRO_PORT: number,
   }
 }

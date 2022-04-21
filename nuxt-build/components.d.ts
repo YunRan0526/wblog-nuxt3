@@ -14,6 +14,7 @@ declare module 'vue' {
     'MenuPage': typeof import("../components/MenuPage/index.vue")['default'],
     'Menu': typeof import("../components/MenuPage/Menu.vue")['default'],
     'MenuPageMoveStar': typeof import("../components/MenuPage/MoveStar.vue")['default'],
+    'MessageBox': typeof import("../components/MessageBox/index.vue")['default'],
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'NuxtLayout': typeof import("../node_modules/nuxt3/dist/app/components/layout")['default'],
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default'],
@@ -32,6 +33,7 @@ declare module 'vue' {
     'LazyMenuPage': typeof import("../components/MenuPage/index.vue")['default'],
     'LazyMenu': typeof import("../components/MenuPage/Menu.vue")['default'],
     'LazyMenuPageMoveStar': typeof import("../components/MenuPage/MoveStar.vue")['default'],
+    'LazyMessageBox': typeof import("../components/MessageBox/index.vue")['default'],
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'LazyNuxtLayout': typeof import("../node_modules/nuxt3/dist/app/components/layout")['default'],
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default'],
@@ -52,6 +54,7 @@ export const MainPageStarAndMoon: typeof import("../components/MainPage/StarAndM
 export const MenuPage: typeof import("../components/MenuPage/index.vue")['default']
 export const Menu: typeof import("../components/MenuPage/Menu.vue")['default']
 export const MenuPageMoveStar: typeof import("../components/MenuPage/MoveStar.vue")['default']
+export const MessageBox: typeof import("../components/MessageBox/index.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt3/dist/app/components/layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default']
@@ -70,6 +73,7 @@ export const LazyMainPageStarAndMoon: typeof import("../components/MainPage/Star
 export const LazyMenuPage: typeof import("../components/MenuPage/index.vue")['default']
 export const LazyMenu: typeof import("../components/MenuPage/Menu.vue")['default']
 export const LazyMenuPageMoveStar: typeof import("../components/MenuPage/MoveStar.vue")['default']
+export const LazyMessageBox: typeof import("../components/MessageBox/index.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt3/dist/app/components/layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt3/dist/app/components/nuxt-error-boundary")['default']

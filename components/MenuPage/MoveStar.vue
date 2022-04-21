@@ -2,8 +2,6 @@
   <canvas id="moveStar" />
 </template>
 <script setup>
-import { onMounted, onBeforeUnmount, reactive } from "vue";
-
 const Star = (canvas, ctx, options) => {
   function Star(canvas, ctx, options) {
     this.timer = null;
